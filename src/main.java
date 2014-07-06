@@ -7,17 +7,21 @@ public class main {
 	String recipi_title ;
 	String file_name;
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException{
 		// TODO 自動生成されたメソッド・スタブ
-		main m = new main();
+		main m = new main();	
+		m.run();
+	}
+	
+	public void run() throws IOException{
 		Scanner scan = new Scanner(System.in);
 
-		m.newFile(scan);
-		m.importRecipi(scan);
-		m.FileImportRecipi();
-		
-
+		newFile(scan);
+		importRecipi(scan);
+		FileImportRecipi();
+	
 	}
+	
 	void newFile(Scanner scan) throws IOException{
 		System.out.print("新しくレシピ名を入力するファイルを作成します\nファイル名を入力してください >");
 		file_name = scan.next();
