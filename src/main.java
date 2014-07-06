@@ -16,10 +16,7 @@ public class main {
 		m.importRecipi(scan);
 		m.FileImportRecipi();
 		
-		/*
 
-
-		 */
 	}
 	void newFile(Scanner scan) throws IOException{
 		System.out.print("新しくレシピ名を入力するファイルを作成します\nファイル名を入力してください >");
